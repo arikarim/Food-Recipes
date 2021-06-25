@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import recipieReducer from './RecipiReducer'
+import recipieReducer from './RecipiReducer';
 
 export default combineReducers({
-  Items: recipieReducer
-})
+  Foods: recipieReducer,
+});

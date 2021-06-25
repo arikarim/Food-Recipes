@@ -5,7 +5,7 @@ import { createStore } from 'redux';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import combinedReducers from './Reducers/Index'
+import combinedReducers from './Reducers/Index';
 
 const store = createStore(combinedReducers);
 ReactDOM.render(
@@ -14,7 +14,7 @@ ReactDOM.render(
       <App />
     </React.StrictMode>
   </Provider>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
 
 // If you want to start measuring performance in your app, pass a function
