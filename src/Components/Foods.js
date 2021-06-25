@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Foods = ({ foods }) => (
   <div className="d-flex flex-wrap justify-content-between">
     {foods && foods.map((food) => (
-      <div key={food.idMeal} className="card" style={{ width: '18rem' }}>
+      <div key={food.idMeal} className="card my-2" style={{ width: '18rem' }}>
         <img src={food.strMealThumb} alt={food.strMeal} />
         <div className="card-body">
           <h3>{food.strMeal}</h3>
