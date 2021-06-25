@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 // import { bindActionCreators } from 'redux';
 import axios from 'axios';
 import { addFoods } from '../Actions/Foods';
+import FoodList from './FoodList';
 
 const FoodItems = ({ addFoods }) => {
   const fetch = async () => {
@@ -17,7 +18,7 @@ const FoodItems = ({ addFoods }) => {
   }, []);
   return (
     <div>
-      ok
+      <FoodList />
     </div>
   );
 };
