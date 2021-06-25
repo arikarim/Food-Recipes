@@ -1,6 +1,13 @@
-import { combineReducers } from 'redux';
+import { createStore, combineReducers } from 'redux';
 import recipieReducer from './RecipiReducer';
 
-export default combineReducers({
-  Foods: recipieReducer,
-});
+const configureStore = () => {
+  const store = createStore(
+    combineReducers({
+      foods: recipieReducer,
+    }),
+  );
+  return store;
+};
+
+export default configureStore;
