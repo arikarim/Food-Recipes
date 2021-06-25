@@ -5,7 +5,7 @@ import { createStore } from 'redux';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import combinedReducers from './Reducers/Index'
 
 const store = createStore(combinedReducers);
 ReactDOM.render(
