@@ -8,8 +8,13 @@ import FoodList from './FoodList';
 
 const FoodItems = ({ addFoods }) => {
   const fetch = async () => {
-    const { data } = await axios.get('https://www.themealdb.com/api/json/v1/1/search.php?f=c');
-    addFoods(data.meals);
+    try {
+      const { data } = await axios.get('https://www.themealdb.com/api/json/v1/1/search.php?f=c');
+      addFoods(data.meals);
+    } catch {
+      const el = document.querySelector('.error');
+      el.innerHTML = 'We are sorry, please try again';
+    }
   };
 
   useEffect(() => {
@@ -19,6 +24,7 @@ const FoodItems = ({ addFoods }) => {
     <div>
       <FilterContainer />
       <FoodList />
+      <div className="my-3 text-center error" />
     </div>
   );
 };

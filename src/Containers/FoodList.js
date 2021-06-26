@@ -12,7 +12,6 @@ const FoodList = ({ foods }) => {
     const f = foods.filter((f) => f.strMeal.toUpperCase().includes(input.toUpperCase()));
     setFoodsFilter(f);
     setInput('');
-    console.log(foodsFilter);
     e.target.firstChild.value = '';
   };
   useEffect(() => {
@@ -21,7 +20,7 @@ const FoodList = ({ foods }) => {
   return (
     <div>
       <form onSubmit={handler} className="d-flex justify-content-center">
-        <input onChange={(e) => setInput(e.target.value)} placeholder="filter by name" />
+        <input minLength="2" onChange={(e) => setInput(e.target.value)} placeholder="filter by name" />
         <button type="submit">Filter</button>
       </form>
       <Foods foods={foodsFilter || foods} />
