@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 const Foods = ({ foods }) => (
   <div className="d-flex flex-wrap justify-content-between">
     {foods && foods.map((food) => (
-      <Link key={food.idMeal} to={`/${food.idMeal}`}>
-        <div className="card my-2" style={{ width: '18rem' }}>
+      <Link className="text-decoration-none link-dark" key={food.idMeal} to={`/${food.idMeal}`}>
+        <div className="card my-2" style={{ width: '18rem', height: '25rem' }}>
           <img src={food.strMealThumb} alt={food.strMeal} />
           <div className="card-body">
             <h3>{food.strMeal}</h3>

@@ -23,12 +23,13 @@ const FoodsDetail = ({ food }) => {
     fetch();
   }, []);
   return (
-    <div className="container">
-      <div className="card my-2" style={{ width: '70vw' }}>
+    <div className="container mx-auto">
+      <div className="card my-2 mx-auto" style={{ width: '70vw' }}>
         <img src={food.strMealThumb} alt={food.strMeal} />
         <div className="card-body">
           <h3>{food.strMeal}</h3>
           <p className="card-text">{food.strArea}</p>
+          <p className="card-text">{food.strCategory}</p>
           Instructions:
           <p className="card-text">{food.strInstructions}</p>
         </div>
