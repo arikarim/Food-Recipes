@@ -1,0 +1,16 @@
+.header {
+  text-align: center;
+  background-color: black;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.header h1 {
+  color: beige;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+/* .header .link {
+  text-decoration: none;
+} */
