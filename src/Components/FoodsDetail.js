@@ -18,7 +18,15 @@ const FoodsDetail = ({ food }) => (
   </div>
 );
 FoodsDetail.propTypes = {
-  food: PropTypes.objectOf(PropTypes.object).isRequired,
+  food: PropTypes.shape({
+    idMeal: PropTypes.string.isRequired,
+    strMeal: PropTypes.string.isRequired,
+    strArea: PropTypes.string.isRequired,
+    strCategory: PropTypes.string.isRequired,
+    strInstructions: PropTypes.string.isRequired,
+    strMealThumb: PropTypes.string.isRequired,
+    title: PropTypes.string,
+  }).isRequired,
 };
 
 const mapStateToProps = (state, props) => ({
