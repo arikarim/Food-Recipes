@@ -9,9 +9,6 @@ const FoodsDetail = ({ food }) => {
   const fetch = async () => {
     try {
       const { data } = await axios.get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${food.idMeal}`);
-      // updateFoods(food.idMeal, {
-      //   description: result.strDescription,
-      // });
       setFoodDetail(data.meals[0]);
       console.log(foodDetail);
     } catch (err) {

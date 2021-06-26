@@ -10,7 +10,6 @@ import FoodList from './FoodList';
 const FoodItems = ({ addFoods }) => {
   const fetch = async () => {
     const { data } = await axios.get('https://www.themealdb.com/api/json/v1/1/search.php?f=b');
-    // console.log(data.meals);
     addFoods(data.meals);
   };
 
