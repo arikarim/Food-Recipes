@@ -26,7 +26,7 @@ const FilterContainer = ({ addFoods }) => {
   return (
     <div className="my-3">
       <form onSubmit={handleSubmit} className="d-flex justify-content-center">
-        <input onChange={(e) => setInput(e.target.value)} />
+        <input placeholder="Search by first letter" onChange={(e) => setInput(e.target.value)} />
         <button type="submit">Search</button>
       </form>
     </div>

@@ -15,7 +15,6 @@ const Foods = ({ foods }) => (
         </div>
       </Link>
     ))}
-    {/* {console.log(foods[0])} */}
   </div>
 );
 
