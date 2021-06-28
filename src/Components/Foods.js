@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const Foods = ({ foods }) => (
-  <div className="d-flex flex-wrap justify-content-between">
+  <div className="d-flex flex-wrap justify-content-around">
     {foods && foods.map((food) => (
       <Link className="text-decoration-none link-dark" key={food.idMeal} to={`/${food.idMeal}`}>
         <div className="card my-2" style={{ width: '18rem', height: '30rem' }}>
