@@ -9,7 +9,9 @@ const FoodList = ({ foods }) => {
 
   const handler = (e) => {
     e.preventDefault();
-    const f = foods.filter((f) => f.strMeal.toUpperCase().includes(input.toUpperCase()));
+    const f = foods.filter((f) => f.strMeal.toUpperCase().includes(input.toUpperCase())
+    || f.strCategory.toUpperCase().includes(input.toUpperCase())
+    || f.strArea.toUpperCase().includes(input.toUpperCase()));
     setFoodsFilter(f);
     setInput('');
     e.target.firstChild.value = '';
@@ -24,7 +26,7 @@ const FoodList = ({ foods }) => {
   return (
     <div>
       <form onSubmit={handler} className="d-flex justify-content-center">
-        <input className="form-control" minLength="2" onChange={(e) => setInput(e.target.value)} placeholder="filter by name" />
+        <input className="form-control" minLength="2" onChange={(e) => setInput(e.target.value)} placeholder="Filter by name, Category or Country" />
         <button className="btn btn-dark" type="submit">Filter</button>
       </form>
       <div className="my-3 text-center error" />
