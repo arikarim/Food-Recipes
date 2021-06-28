@@ -1,4 +1,4 @@
-# Food Recipe
+# Food Recipe(Catalogue of Recipes)
 Food Recipe is a food search application where users can search for a list of foods by first letter and filter the list using food name.
 ## Screenshots of the app.
 
@@ -6,7 +6,7 @@ Food Recipe is a food search application where users can search for a list of fo
 
 
 
-[Live Demo Link](https://60d9b4ba2f18aed9974b3390--epic-kilby-a23fc8.netlify.app/)
+[Live Demo Link](https://60d9c0abccc45700086d7eec--epic-kilby-a23fc8.netlify.app/)
 
 ## Built With
 
