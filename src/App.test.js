@@ -1,8 +1,21 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import Food from './Components/Foods';
+import Header from './Components/Header'
+import Home from './Containers/Home'
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+// test('renders food cardss', () => {
+//   render(<Food />);
+// });
+
+
+// test('renders foods detaila', () => {
+//   render(<Header />);
+// });
+
+// it('should take a snapshot', () => {
+//   const { asFragment } = render(<Header />)
+  
+//   expect(asFragment(<Header />)).toMatchSnapshot()
+// })
+
+
