@@ -21,4 +21,3 @@ describe('Header with Link', () => {
     expect(tree).toMatchSnapshot();
   });
 });
-

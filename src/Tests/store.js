@@ -1,4 +1,3 @@
-
 import { createStore, combineReducers } from 'redux';
 import recipieReducer from '../Reducers/RecipiReducer';
 import filtersReducer from '../Reducers/Filter';

@@ -29,5 +29,4 @@ describe('foodsReducer', () => {
     const state = recipieReducer(undefined, action);
     expect(state).not.toEqual({});
   });
-
 });
