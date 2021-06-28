@@ -6,11 +6,13 @@ Food Recipe is a food search application where users can search for a list of fo
 
 
 
-[Live Demo Link](https://book-storee.herokuapp.com/)
+[Live Demo Link](https://60d9b4ba2f18aed9974b3390--epic-kilby-a23fc8.netlify.app/)
 
 ## Built With
 
 - React
+
+- Redux
 
 - Bootstrap
  
