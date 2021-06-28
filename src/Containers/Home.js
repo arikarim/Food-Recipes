@@ -11,7 +11,6 @@ const FoodItems = ({ addFoods }) => {
     try {
       const { data } = await axios.get('https://www.themealdb.com/api/json/v1/1/search.php?f=c');
       addFoods(data.meals);
-      console.log(data.meals[0]);
       const el = document.querySelector('.error');
       el.innerHTML = '';
     } catch {
