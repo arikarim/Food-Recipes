@@ -13,6 +13,7 @@ const FoodsDetail = ({ food }) => (
         <p className="card-text">{food.strCategory}</p>
         Instructions:
         <p className="card-text">{food.strInstructions}</p>
+        <a className="btn btn-info" href={food.strYoutube}>Watch a video</a>
       </div>
     </div>
   </div>
@@ -25,6 +26,7 @@ FoodsDetail.propTypes = {
     strCategory: PropTypes.string.isRequired,
     strInstructions: PropTypes.string.isRequired,
     strMealThumb: PropTypes.string.isRequired,
+    strYoutube: PropTypes.string.isRequired,
     title: PropTypes.string,
   }).isRequired,
 };
