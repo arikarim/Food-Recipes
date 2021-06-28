@@ -1,69 +1,54 @@
-# Getting Started with Create React App
+# Food Recipe
+Food Recipe is a food search application where users can search for a list of foods by first letter and filter the list using food name.
+## Screenshots of the app.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
+![image](./src/img/screen.png)
 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+[Live Demo Link](https://book-storee.herokuapp.com/)
 
-### `yarn test`
+## Built With
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React
 
-### `yarn build`
+- Bootstrap
+ 
+- Css
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Prerequisities
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+node should be installed in your machine.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+## Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**To get this project set up on your local machine, follow these simple steps:**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Step 1**<br>
+ - Clone the repo to your local machine.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+ - cd inside the project directory.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+**Step 2**<br>
 
-## Learn More
+ - npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ - run npm run start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🤝 contributing
 
-### Code Splitting
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- GitHub: [@arikarim](https://github.com/arikarim)
+- LinkedIn: [AriKarim](https://www.linkedin.com/in/ari-karim-523bb81b3)
 
-### Analyzing the Bundle Size
+## 🙋‍♂ show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+give a ⭐️ if you like this project!
 
-### Making a Progressive Web App
+## 📝 license
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](lisenced)
