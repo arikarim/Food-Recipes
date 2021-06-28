@@ -2,7 +2,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import renderer from 'react-test-renderer';
-import FoodList from '../Containers/FoodList';
+import Foods from '../Components/Foods';
 import createTestStore from './store';
 
 describe('Foods list', () => {
@@ -15,7 +15,7 @@ describe('Foods list', () => {
     const jsx = (
       <Provider store={store}>
         <BrowserRouter>
-          <FoodList />
+          <Foods />
         </BrowserRouter>
       </Provider>
     );
