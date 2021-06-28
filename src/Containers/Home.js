@@ -12,6 +12,8 @@ const FoodItems = ({ addFoods }) => {
       const { data } = await axios.get('https://www.themealdb.com/api/json/v1/1/search.php?f=c');
       addFoods(data.meals);
       console.log(data.meals[0]);
+      const el = document.querySelector('.error');
+      el.innerHTML = '';
     } catch {
       const el = document.querySelector('.error');
       el.innerHTML = 'We are sorry, please try again';
@@ -25,7 +27,6 @@ const FoodItems = ({ addFoods }) => {
     <div className="container">
       <FilterContainer />
       <FoodList />
-      <div className="my-3 text-center error" />
     </div>
   );
 };

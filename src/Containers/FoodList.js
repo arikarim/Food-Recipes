@@ -13,6 +13,10 @@ const FoodList = ({ foods }) => {
     setFoodsFilter(f);
     setInput('');
     e.target.firstChild.value = '';
+    if (f.length === 0) {
+      const el = document.querySelector('.error');
+      el.innerHTML = 'We are sorry, No records found';
+    }
   };
   useEffect(() => {
     setFoodsFilter(foods);
@@ -20,9 +24,10 @@ const FoodList = ({ foods }) => {
   return (
     <div>
       <form onSubmit={handler} className="d-flex justify-content-center">
-        <input minLength="2" onChange={(e) => setInput(e.target.value)} placeholder="filter by name" />
-        <button type="submit">Filter</button>
+        <input className="form-control" minLength="2" onChange={(e) => setInput(e.target.value)} placeholder="filter by name" />
+        <button className="btn btn-dark" type="submit">Filter</button>
       </form>
+      <div className="my-3 text-center error" />
       <Foods foods={foodsFilter || foods} />
     </div>
   );

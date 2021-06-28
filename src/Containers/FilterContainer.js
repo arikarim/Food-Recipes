@@ -11,6 +11,8 @@ const FilterContainer = ({ addFoods }) => {
     try {
       const { data } = await axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?f=${input}`);
       addFoods(data.meals);
+      const el = document.querySelector('.error');
+      el.innerHTML = '';
     } catch (err) {
       const el = document.querySelector('.error');
       el.innerHTML = 'We are sorry, please try again';
@@ -19,6 +21,7 @@ const FilterContainer = ({ addFoods }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (input === '') return;
     fetch();
     setInput('');
     e.target.firstChild.value = '';
@@ -26,8 +29,8 @@ const FilterContainer = ({ addFoods }) => {
   return (
     <div className="my-3">
       <form onSubmit={handleSubmit} className="d-flex justify-content-center">
-        <input maxLength="1" placeholder="Search by first letter" onChange={(e) => setInput(e.target.value)} />
-        <button type="submit">Search</button>
+        <input className="form-control" minLength="1" maxLength="1" placeholder="Search by first letter" onChange={(e) => setInput(e.target.value)} />
+        <button className="btn btn-dark" type="submit">Search</button>
       </form>
     </div>
   );
