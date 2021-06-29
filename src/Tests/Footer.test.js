@@ -2,11 +2,11 @@ import React from 'react';
 import { BrowserRouter, MemoryRouter } from 'react-router-dom';
 import { render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
-import Header from '../Components/Header';
+import Footer from '../Components/Footer';
 
-describe('Header with Link', () => {
+describe('Footer with Link', () => {
   test('full app rendering/navigating', () => {
-    render(<Header />, { wrapper: MemoryRouter });
+    render(<Footer />, { wrapper: MemoryRouter });
     // eslint-disable-next-line no-unused-expressions
     expect(screen.getByText('FoodRecipe')).toBeInTheDocument;
   });
@@ -14,7 +14,7 @@ describe('Header with Link', () => {
     const tree = renderer
       .create(
         <BrowserRouter>
-          <Header />
+          <Footer />
         </BrowserRouter>,
       )
       .toJSON();
