@@ -38,6 +38,19 @@ node should be installed in your machine.
 
  - run npm run start
 
+
+ ## How to run tests
+
+ - Go to the project
+
+ - Open the terminal
+
+ - Run:
+ ```
+ npm run test
+
+ ```
+
 ## 🤝 contributing
 
 ## Author
