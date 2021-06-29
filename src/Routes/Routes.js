@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from '../Containers/Home';
 import Header from '../Components/Header';
+import Footer from '../Components/Footer';
 import FoodsDetail from '../Components/FoodsDetail';
 
 const Routes = () => (
@@ -11,9 +12,8 @@ const Routes = () => (
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/:id" component={FoodsDetail} />
-        {/* <Route component={NotFound} /> */}
       </Switch>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   </BrowserRouter>
 );
