@@ -13,7 +13,12 @@ const FoodsDetail = ({ food }) => (
         <p className="card-text">{food.strCategory}</p>
         Instructions:
         <p className="card-text">{food.strInstructions}</p>
-        <a className="btn btn-info" href={food.strYoutube}>Watch a video</a>
+        <iframe
+          title={food.strMeal}
+          width="100%"
+          height="315"
+          src={food.strYoutube}
+        />
       </div>
     </div>
   </div>
