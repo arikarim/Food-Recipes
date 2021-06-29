@@ -2,7 +2,7 @@
 
 exports[`Footer with Link should match with snapshot 1`] = `
 <footer
-  className="header text-decoration-none"
+  className="header text-decoration-none "
 >
   <a
     className="link"

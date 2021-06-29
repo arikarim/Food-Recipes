@@ -23,7 +23,7 @@ const FoodItems = ({ addFoods }) => {
     fetch();
   }, []);
   return (
-    <div className="container">
+    <div className="container home">
       <FilterContainer />
       <FoodList />
     </div>
