@@ -1,8 +1,8 @@
 import { createStore, combineReducers } from 'redux';
-import recipieReducer from './RecipiReducer';
-import filtersReducer from './Filter';
+import recipieReducer from '../Reducers/RecipiReducer';
+import filtersReducer from '../Reducers/Filter';
 
-const configureStore = () => {
+const createTestStore = () => {
   const store = createStore(
     combineReducers({
       foods: recipieReducer,
@@ -12,4 +12,4 @@ const configureStore = () => {
   return store;
 };
 
-export default configureStore;
+export default createTestStore;

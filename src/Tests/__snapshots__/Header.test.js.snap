@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header with Link should match with snapshot 1`] = `
+<header
+  className="header text-decoration-none"
+>
+  <a
+    className="link"
+    href="/"
+    onClick={[Function]}
+  >
+    <h1
+      className="header__title text-decoration-none"
+    >
+      FoodRecipe
+    </h1>
+  </a>
+</header>
+`;

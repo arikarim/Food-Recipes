@@ -1,36 +1,38 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-// import { bindActionCreators } from 'redux';
 import axios from 'axios';
+import FilterContainer from './FilterContainer';
 import { addFoods } from '../Actions/Foods';
 import FoodList from './FoodList';
 
 const FoodItems = ({ addFoods }) => {
   const fetch = async () => {
-    const { data } = await axios.get('https://www.themealdb.com/api/json/v1/1/search.php?f=b');
-    // console.log(data.meals);
-    addFoods(data.meals);
+    try {
+      const { data } = await axios.get('https://www.themealdb.com/api/json/v1/1/search.php?f=c');
+      addFoods(data.meals);
+      const el = document.querySelector('.error');
+      el.innerHTML = '';
+    } catch {
+      const el = document.querySelector('.error');
+      el.innerHTML = 'We are sorry, please try again';
+    }
   };
 
   useEffect(() => {
     fetch();
   }, []);
   return (
-    <div>
+    <div className="container home">
+      <FilterContainer />
       <FoodList />
     </div>
   );
 };
 
 FoodItems.propTypes = {
-  // items: PropTypes.objectOf(PropTypes.object).isRequired,
   addFoods: PropTypes.func.isRequired,
 };
-
-// const mapStateToProps = (state) => ({
-//   items: state.Items
-// })
 
 const mapDispatchToProps = (dispatch) => ({
   addFoods: (data) => dispatch(addFoods(data)),
