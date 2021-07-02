@@ -2,6 +2,8 @@
 Food Recipe is a food search application where users can search for a list of foods by the first letter and filter the list using food names.
 ## Screenshots of the app.
 
+
+
 ![image](./src/img/screen.png)
 
 
