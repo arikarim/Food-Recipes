@@ -4,6 +4,7 @@ Food Recipe is a food search application where users can search for a list of fo
 
 
 
+
 ![image](./src/img/screen.png)
 
 
